@@ -10,7 +10,6 @@ const links = [
     ...TEMPLATE_PLATFORMS
 ];
 export default function NavLinks () {
-
     return (
         <>
             {links.map((link) => {
