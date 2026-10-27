@@ -1,4 +1,6 @@
 // navigation
+import { Platform } from '@/app/config';
+import { TEMPLATE_PLATFORMS } from '@/app/templates';
 import {
   UserGroupIcon,
   HomeIcon,
