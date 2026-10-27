@@ -7,6 +7,7 @@ import {
 
 const links = [
     { name: 'Home', href: '/dashboard', icon: HomeIcon },
+    ...TEMPLATE_PLATFORMS
 ];
 export default function NavLinks () {
 
@@ -20,8 +21,9 @@ export default function NavLinks () {
                         href={link.href}
                         className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-800 p-3 text-sm font-medium hover:bg-gray-700 md:flex-none md:justify-start md:p-2 md:px-3"
                     >
-                        <LinkIcon className="w-6" />
+                        {LinkIcon && <LinkIcon className="w-6" />}
                         <p className="hidden md:block">{link.name}</p>
+                        
                     </a>)
             })}
         </>
